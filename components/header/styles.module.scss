@@ -93,6 +93,7 @@
 
 .menu {
   width: 280px;
+  height: auto;
   box-shadow: $shadow-1;
   position: absolute;
   top: 100%;
@@ -105,5 +106,46 @@
   padding: 1rem 0;
   h4 {
     text-align: center;
+  }
+  .flex {
+    display: flex !important;
+    gap: 10px !important;
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .user__menu {
+    .user__menu_item {
+      display: flex;
+      align-items: center;
+      height: 44px;
+      padding-left: 1rem;
+      a {
+        width: 100%;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+      }
+      &:hover {
+        background: #eeeeeebe;
+        color: #000;
+        font-size: 20px;
+        letter-spacing: 10px;
+        font-weight: 500;
+      }
+    }
+  }
+  &__img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+    span {
+      &:last-of-type {
+        font-size: 14px;
+        color: $blue-color;
+        text-decoration: underline;
+      }
+    }
   }
 }

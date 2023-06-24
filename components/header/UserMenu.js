@@ -14,34 +14,31 @@ export default function UserMenu({ loggedIn }) {
           />
           <div className={styles.col}>
             <span>Welcome Back.</span>
-            <h3>Pornchai Sangpongpan</h3>
+            <h3>Pornchai</h3>
             <span>Sign Out</span>
           </div>
         </div>
       ) : (
         <div className={styles.flex}>
-          <button>Register</button>
-          <button>Login</button>
+          <button className={styles.btn_primary}>Register</button>
+          <button className={styles.btn_outline}>Login</button>
         </div>
       )}
-      <ul>
-        <li>
+      <ul className={styles.user__menu}>
+        <li className={styles.user__menu_item}>
             <Link href="/profile">Account</Link>
         </li>
-        <li>
+        <li className={styles.user__menu_item}>
             <Link href="/profile">My Order</Link>
         </li>
-        <li>
+        <li className={styles.user__menu_item}>
             <Link href="/profile">Message Center</Link>
         </li>
-        <li>
+        <li className={styles.user__menu_item}>
             <Link href="/profile">Address</Link>
         </li>
-        <li>
+        <li className={styles.user__menu_item}>
             <Link href="/profile">Wishlist</Link>
-        </li>
-        <li>
-            <Link href="/profile"></Link>
         </li>
       </ul>
     </div>
