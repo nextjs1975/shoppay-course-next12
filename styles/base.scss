@@ -39,3 +39,8 @@ $cubic-bezier: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border: 1px solid #d4d3d3;
     border-radius: 3px;
 }
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

@@ -7,7 +7,7 @@ export default function Socials() {
   return (
     <div className={styles.footer__socials}>
       <section>
-        <h1>STAY CONNECTED</h1>
+        <h3>STAY CONNECTED</h3>
         <ul>
           <li>
             <Link href="/">
